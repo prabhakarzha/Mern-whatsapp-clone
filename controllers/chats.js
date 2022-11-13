@@ -20,6 +20,7 @@ export const createChat = async (req, res) => {
   try {
     newChat.save();
     res.status(200).json(newChat);
+    // console.log(newChat);
   } catch (err) {
     res.status(409).json({ message: err.message });
   }
