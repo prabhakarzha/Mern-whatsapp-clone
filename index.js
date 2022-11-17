@@ -29,8 +29,7 @@ app.use(Cors());
 app.use("/chats", chatRoutes);
 //DB configuration
 
-const connection_url =
-  "mongodb+srv://admin:whatsappmern123@cluster0.bus1msl.mongodb.net/?retryWrites=true&w=majority";
+const connection_url = "";
 
 mongoose.connect(connection_url, {});
 
